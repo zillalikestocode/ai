@@ -21,7 +21,7 @@ export default function(){
 		try {
 			setLoading(true)
 			setImages([])
-			const response = await axios.post("http://localhost:5000/image/generate", details)
+			const response = await axios.post("https://zilla-ai.onrender.com", details)
 			setImages(response.data.images)
 			setLoading(false)
 		}catch (err){
