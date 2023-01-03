@@ -33,8 +33,8 @@ export default function(){
 		<div className="mt-16">
 			<form action="" onSubmit={(e)=> handleSubmit(e)} className="flex gap-3 flex-col items-center justify-center">
 			<div className="flex flex-col gap-3">
-				<input type="text" name="prompt" onChange={(e)=> handleChange(e)} value={details.prompt} placeholder="Enter a Prompt" className="w-74 rounded-full bg-[#121212] px-5 py-2 placeholder:text-white/25 focus:outline-none text-white/75"/>
-				<input type="number" name="number" onChange={(e)=> handleChange(e)} value={details.number} placeholder="Amount" min="1" max="10" className="w-32 rounded-full placeholder:text-sm bg-[#121212] px-5 py-2 placeholder:text-white/25 focus:outline-none text-white/75"/>
+				<input required type="text" name="prompt" onChange={(e)=> handleChange(e)} value={details.prompt} placeholder="Enter a Prompt" className="w-74 rounded-full bg-[#121212] px-5 py-2 placeholder:text-white/25 focus:outline-none text-white/75"/>
+				<input required type="number" name="number" onChange={(e)=> handleChange(e)} value={details.number} placeholder="Amount" min="1" max="10" className="w-32 rounded-full placeholder:text-sm bg-[#121212] px-5 py-2 placeholder:text-white/25 focus:outline-none text-white/75"/>
 			<div className="text-left flex gap-2 ml-3">
 				<h4>size:</h4>
 				<select name="size" onChange={(e)=> handleChange(e)} id="" className="bg-[#121212]">
